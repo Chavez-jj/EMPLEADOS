@@ -53,5 +53,13 @@ public int getsalario(){
 public void setsalario(int salario){
     this.salario=salario;
 }
+
+@Override
+public String toString() {
+
+    return "Empleados [nombre=" + nombre + ", Id=" + Id + ", salario=" + salario + "]";
+}
+
+
 }
  
