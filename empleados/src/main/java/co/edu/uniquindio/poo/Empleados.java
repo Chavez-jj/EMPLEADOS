@@ -10,6 +10,7 @@ public abstract class Empleados {
  * metodo contructor de la clase empleado
  * @param nombre
  * @param Id
+ * @param salario
  */
     public Empleados(String nombre,int Id,int salario){
         this.nombre=nombre;
@@ -20,7 +21,7 @@ public abstract class Empleados {
  * 
  * Metodo abtracto para calcular el salario
  */
-    public abstract int CalcularSalario();
+    public abstract int calcularSalario();
 
 /**
  * 
