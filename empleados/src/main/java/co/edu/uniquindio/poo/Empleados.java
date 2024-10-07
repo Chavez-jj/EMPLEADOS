@@ -3,7 +3,7 @@ package co.edu.uniquindio.poo;
 public abstract class Empleados {
     private String nombre; 
     private int Id; 
-    private int salario;
+ 
 
 
 /**
@@ -12,10 +12,10 @@ public abstract class Empleados {
  * @param Id
  * @param salario
  */
-    public Empleados(String nombre,int Id,int salario){
+    public Empleados(String nombre,int Id){
         this.nombre=nombre;
         this.Id=Id;
-        this.salario=salario;
+    
     }
 /**
  * 
@@ -46,18 +46,12 @@ public void setId(int id) {
    this.Id = id;
 }
 
-public int getsalario(){
-    return salario;
-}
 
-public void setsalario(int salario){
-    this.salario=salario;
-}
 
 @Override
 public String toString() {
 
-    return "Empleados [nombre=" + nombre + ", Id=" + Id + ", salario=" + salario + "]";
+    return "Empleados [nombre=" + nombre + ", Id=" + Id + "]";
 }
 
 
