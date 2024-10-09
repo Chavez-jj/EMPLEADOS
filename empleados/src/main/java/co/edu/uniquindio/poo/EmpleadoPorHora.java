@@ -1,7 +1,7 @@
 package co.edu.uniquindio.poo;
 
 public class EmpleadoPorHora extends Empleado {
-    public int horasTrabajadas, salarioPorHora;
+    public int horasTrabajadas, salarioPorHora, pagoTotal;
 
 
 
@@ -31,6 +31,11 @@ public class EmpleadoPorHora extends Empleado {
     }
     public void setSalarioPorHora(int salarioPorHora) {
         this.salarioPorHora = salarioPorHora;
+    }
+    @Override
+    public String toString() {
+        return "EmpleadoPorHora [horasTrabajadas=" + horasTrabajadas + ", salarioPorHora=" + salarioPorHora
+                + ", pagoTotal=" + pagoTotal + "]";
     } 
 
     

@@ -33,5 +33,11 @@ public class EmpleadpFreelance extends Empleado {
     public void setPagoPorProyecto(int pagoPorProyecto) {
         this.pagoPorProyecto = pagoPorProyecto;
     }
+    @Override
+    public String toString() {
+        return "EmpleadpFreelance [proyectosCompletados=" + proyectosCompletados + ", pagoPorProyecto="
+                + pagoPorProyecto + ", pagoTotal=" + pagoTotal + "]";
+    }
+    
     
 }
