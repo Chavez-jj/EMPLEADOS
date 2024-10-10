@@ -50,7 +50,7 @@ public class EmpleadoTiempoCompletoTest {
      * Prueba con assertThrows para validar que los ID negativos no son permitidos 
      */
     @Test
-    void testThrowsExceptionForInvalidId() {
+    void idNegativo() {
         assertThrows(IllegalArgumentException.class, () -> {
             new EmpleadoTiempoCompleto("Luis", -1, 3000);
         }, "Se esperaba una IllegalArgumentException por un ID negativo.");

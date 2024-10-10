@@ -62,7 +62,7 @@ public class EmpleadoFreelanceTest {
      * Prueba con assertThrows para validar que los ID negativos no son permitidos 
      */
     @Test
-    void testThrowsExceptionForInvalidId() {
+    void idNegativo() {
         assertThrows(IllegalArgumentException.class, () -> {
             new EmpleadpFreelance("Laura", -1, 5, 300);
         }, "Se esperaba una IllegalArgumentException por un ID negativo.");
