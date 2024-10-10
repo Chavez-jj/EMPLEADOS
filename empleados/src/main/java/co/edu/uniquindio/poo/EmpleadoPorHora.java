@@ -10,6 +10,7 @@ public class EmpleadoPorHora extends Empleado {
         validarIdNegativo(Id);
         this.horasTrabajadas=horasTrabajadas;
         this.salarioPorHora=salarioPorHora;
+        this.pagoTotal = calcularSalario();
     }
     /**
      * Método que valida si el ID es negativo
@@ -22,12 +23,10 @@ public class EmpleadoPorHora extends Empleado {
     }
 
     @Override
- public int calcularSalario(){
-    int pagoTotal = 0;
-    pagoTotal = horasTrabajadas * salarioPorHora;
-
-    return pagoTotal;
-}
+    public int calcularSalario() {
+        this.pagoTotal = horasTrabajadas * salarioPorHora;
+        return this.pagoTotal;
+    }
     public int getHorasTrabajadas() {
         return horasTrabajadas;
     }

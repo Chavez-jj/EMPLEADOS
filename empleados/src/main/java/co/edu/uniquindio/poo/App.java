@@ -6,7 +6,7 @@ package co.edu.uniquindio.poo;
  */
 public class App {
     public static void main(String[] args) {
-        EmpleadoTiempoCompleto empleado = new EmpleadoTiempoCompleto("valery", 123, 2000);
+        EmpleadoPorHora empleado = new EmpleadoPorHora("jean", 4, 6, 3);
         System.out.println(empleado.toString());  
     }
 }
