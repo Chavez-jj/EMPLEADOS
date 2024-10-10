@@ -12,7 +12,7 @@ public class EmpleadoTiempoCompleto extends Empleado {
  public int calcularSalario(){
 
     return salarioMensual;
-}
+} 
 
 public int getSalarioMensual() {
     return salarioMensual;
