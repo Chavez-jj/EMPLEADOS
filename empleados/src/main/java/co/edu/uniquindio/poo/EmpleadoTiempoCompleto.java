@@ -5,6 +5,7 @@ public class EmpleadoTiempoCompleto extends Empleado {
     
     public EmpleadoTiempoCompleto(String nombre,int Id, int salarioMensual){
         super(nombre,Id);
+        validarIdNegativo(Id);
         this.salarioMensual=salarioMensual;
     }
 
@@ -13,6 +14,11 @@ public class EmpleadoTiempoCompleto extends Empleado {
 
     return salarioMensual;
 } 
+public void validarIdNegativo(int Id) {
+    if (Id < 0) {
+        throw new IllegalArgumentException("El ID no puede ser negativo.");
+    }
+}
 
 public int getSalarioMensual() {
     return salarioMensual;

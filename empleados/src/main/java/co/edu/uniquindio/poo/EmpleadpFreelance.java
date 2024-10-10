@@ -5,8 +5,10 @@ public class EmpleadpFreelance extends Empleado {
 
     public EmpleadpFreelance(String Nombre, int Id, int proyectosCompletados, int pagoPorProyecto){
         super(Nombre, Id);
+        validarIdNegativo(Id);
         this.proyectosCompletados=proyectosCompletados;
         this.pagoPorProyecto=pagoPorProyecto;
+        this.pagoTotal = calcularSalario();
 
 
     }
@@ -17,6 +19,11 @@ public class EmpleadpFreelance extends Empleado {
 
         return pagoTotal;
     } 
+    public void validarIdNegativo(int Id) {
+        if (Id < 0) {
+            throw new IllegalArgumentException("El ID no puede ser negativo.");
+        }
+    }
 
     public int getProyectosCompletados() {
         return proyectosCompletados;
